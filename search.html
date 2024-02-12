@@ -190,69 +190,6 @@
 
 <script>
 
-
-
-// const input = document.getElementById("search1");
-//         input.addEventListener('input', function (e) {
-//             const place = e.target.value
-//             if (place.trim() !== "") {
-//                 search(place)
-//             } else {
-//                 clearInput()
-//             }
-//         })
-        
-//         async function search(place) {
-//             const api =` http://api.geonames.org/postalCodeSearchJSON?placename_startsWith=${place}&maxRows=7&username=arun&country=IN`
-//             const res = await fetch(api)
-//             const data = await res.json()
-//             console.log(data)
-//             const datalist = document.getElementById("suggestionList")
-//             datalist.innerHTML = ""
-//             if (data.postalCodes) {
-//     data.postalCodes.map(postalCode => {
-//         const list = document.createElement('li'); // Fix typo here
-//         list.textContent = postalCode.placeName;
-//         list.value = postalCode.placeName;
-//         list.addEventListener('click', function () {
-//             input.value = optionSelect(postalCode);
-//             console.log("click function invoked");
-//             clearInput();
-//         });
-//         datalist.appendChild(list);
-//         console.log(datalist);
-//     });
-// }
-
-//         }
-//         function clearInput() {
-//             input.value = ""
-//             // datalist.value = ""
-//         }
-
-
-//         function optionSelect(postalCode) {
-//             console.log("optionSelect function is invoked")
-//             const str = JSON.stringify(postalCode)
-//             console.log("object is" + str)
-//             console.log(postalCode.lat)
-//             console.log(postalCode.lng)
-//             weatherDetails(postalCode.lat,postalCode.lng)
-//         }
-//         async function weatherDetails(lat,long){
-//             console.log("weather function is invoked")
-//             const api2 = "fc0bade6d90cb32856dbfddd129fa39b"
-//             const apiurl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api2}&units=metric`
-
-//             const response = await fetch(apiurl)
-//             const data2 = await response.json()
-//             console.log(data2)
-//         }
-
-// const apiKey= "fc0bade6d90cb32856dbfddd129fa39b";
-// const apiUrl= "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-
-
 const api2 = "http://api.geonames.org/timezoneJSON?lat=13.08784&lng=80.27847&username=divya"
 
           // const searchBtn = document.querySelector('button');
